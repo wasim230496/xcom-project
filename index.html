@@ -13,18 +13,8 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="flex container mx-auto ">
-        <div class="left  flex flex-col my-4 sticky top-0 h-[100vh] ">
-            <!-- <div class="logo invert hover:rounded-full hover:cursor-pointer w-fit hover:bg-[#bdbdbd] m-1">
-                <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="w-8 mx-6 my-2  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk  ">
-                    <g>
-                        <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                        </path>
-                    </g>
-                </svg>
-            </div> -->
+    <div class="flex container md:mx-auto ">
+        <div class="left  flex flex-col md:my-4 sticky top-0 h-[100vh] ">
             <div class="sidebar flex flex-col justify-end my-2">
                 <ul class="flex flex-col  text-xl gap-2 ">
 
@@ -39,50 +29,55 @@
                 </svg>
                         </li>
                     <li class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
-                        <span class="material-symbols-outlined mr-1"> home </span> Home</li>
+                        <span class="material-symbols-outlined mr-1"> home </span> <span class="hidden md:block"> Home</span></li>
                     <li
                         class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
-                        <span class="material-symbols-outlined mr-1"> search </span> Search</li>
+                        <span class="material-symbols-outlined mr-1"> search </span> <span class="hidden md:block"> Search</span></li>
                     <li
                         class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
-                        <span class="material-symbols-outlined mr-1"> notifications </span> Notifications</li>
+                        <span class="material-symbols-outlined mr-1"> notifications </span> <span class="hidden md:block"> Notifications</span></li>
                     <li
                         class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
-                        <span class="material-symbols-outlined mr-1"> mail </span> Messages</li>
+                        <span class="material-symbols-outlined mr-1"> mail </span> <span class="hidden md:block"> Messages</span></li>
                     <li
                         class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
-                        <span class="material-symbols-outlined mr-1"> hide_source </span> Grok</li>
+                        <span class="material-symbols-outlined mr-1"> hide_source </span> <span class="hidden md:block"> Grok</span></li>
                     <li
                         class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
-                        <span class="material-symbols-outlined mr-1"> group</span>Communities</li>
+                        <span class="material-symbols-outlined mr-1"> group</span><span class="hidden md:block"> Communities</span></li>
                     <li
                         class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
-                        <span class="material-symbols-outlined mr-1"> person</span>Profile</li>
+                        <span class="material-symbols-outlined mr-1"> person</span><span class="hidden md:block"> Profile</span></li>
                     <li
                         class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer">
-                        <span class="material-symbols-outlined mr-1">pending</span>More</li>
-                    <button class="bg-white  rounded-full  px-20 font-bold py-3 text-black mx-2 hover:bg-gray-300">Post</button>
+                        <span class="material-symbols-outlined mr-1">pending</span><span class="hidden md:block"> More</span></li>
+                    <li
+                        class="flex justify-start items-center px-6 py-2  w-fit hover:bg-gray-900 hover:rounded-full hover:cursor-pointer  md:hidden ">
+                        <span class="material-symbols-outlined mr-1">draw</span></li>
+
+                    <button class="bg-white  rounded-full  px-20 font-bold py-3 text-black mx-2 hover:bg-gray-300 md:block hidden">Post</button>
                 </ul>
-                <div class="profile flex items-center mt-5 justify-center  hover:bg-gray-900 hover:rounded-full hover:cursor-pointer px-10 py-2 m-2">
-                    <img src="ndtv.png" class="h-10 w-10   rounded-full  inline-block  m-2 cursor-pointer" alt="NDTV"> 
-                    <div class="ml-2 mr-4">
-                        <p class="font-bold">Wasim Akram</p>
-                        <p class="text-gray-500">@A4575Akram</p>
+                <div class="profile flex items-center mt-5 justify-center  hover:bg-gray-900 hover:rounded-full hover:cursor-pointer md:px-10 py-2 m-2">
+                    <img src="ndtv.png" class="h-10 w-10   rounded-full  md:inline-block  md:m-2 cursor-pointer" alt="NDTV"> 
+                    <div class="ml-2 mr-4   md:block hidden">
+                        <p class="font-bold md:block hidden">Wasim Akram</p>
+                        <p class="text-gray-500 md:block hidden">@A4575Akram</p>
                     </div>
-                    <span class="material-symbols-outlined " style="font-size: 15px;">more_horiz</span>
+                    <span class="material-symbols-outlined md:block !hidden " >more_horiz</span>
 
                 </div>
             </div>
 
         </div>
-        <div class="center  w-full border-x-[0.5px]  border-gray-500">
+        <div class="center   border-x-[0.5px]  border-gray-500">
             <div class="flex  " style="border-bottom: 0.5px solid rgb(75, 75, 75);">
                 <div class="flex justify-center py-4 w-1/2 font-bold  hover:bg-slate-950  hover:cursor-pointer ">For You
-                </div>
+            </div>
 
                 <div class="flex justify-center py-4 w-1/2 hover:bg-slate-950  hover:cursor-pointer">Following</div>
+                <div class=" bg-blue-600 rounded-full w-[60px] h-1 absolute left-[31.5%] top-[8.5%] "></div>
+                
             </div>
-            <div class=" bg-blue-600 rounded-full w-[60px] h-1 absolute left-[32%] top-[8.5%] "></div>
             <div class="whatshappening">
                 <div class="flex">
                     <img src="ndtv.png" class="h-10 w-10   rounded-full  inline-block  m-2 cursor-pointer" alt="NDTV">
@@ -484,7 +479,7 @@
                 <hr class="my-3 border-gray-500">
             </div>
         </div>
-        <div class="right w-[60%] sticky  ">
+        <div class="right w-[60%] sticky hidden md:block ">
 
             <div
                 class="search flex justify-center items-center bg-gray-900 rounded-full my-4 mx-6 px-4 py-2 border-[0.5px] border-gray-500">
